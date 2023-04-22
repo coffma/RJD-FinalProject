@@ -175,7 +175,6 @@ def main():
     make_scatter_plot(listed_elements , listed_dates)
     make_bar_graph(cur, conn)
     get_high_data(cur, conn)
-    make_bar_graph(cur, conn)
     pie_chart("ORCL")
     pie_chart("MSFT")
     sp_scatter(cur, conn)
