@@ -170,11 +170,13 @@ def main():
     data = avg_function(cur, conn)
     write_file("averages.csv", data)
    
-    listed_elements,listed_dates = get_high_data(cur, conn)
+    listed_elements, listed_dates = get_high_data(cur, conn)
 
     make_scatter_plot(listed_elements , listed_dates)
     make_bar_graph(cur, conn)
     get_high_data(cur, conn)
+    joined_plot(joined_data)
+
     pie_chart("ORCL")
     pie_chart("MSFT")
     sp_scatter(cur, conn)
